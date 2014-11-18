@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<title>Jie Btn</title>
+
+<script src="../webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="jie-btn.html">
+
+<style>
+  jie-btn[block] + jie-btn[block] {
+    margin-top: 5px;
+  }
+</style>
+
+</head>
+<body>
+
+<jie-btn>Click Me!</jie-btn>
+<jie-btn active>Click Me!</jie-btn>
+<jie-btn disabled>Click Me!</jie-btn>
+<jie-btn primary>Click Me!</jie-btn>
+<jie-btn primary active>Click Me!</jie-btn>
+<jie-btn primary disabled>Click Me!</jie-btn>
+<hr>
+<fieldset>
+  <legend>fieldset</legend>
+  <jie-btn>Click Me!</jie-btn>
+  <jie-btn primary>Click Me!</jie-btn>
+</fieldset>
+<hr>
+<fieldset disabled>
+  <legend>fieldset</legend>
+  <jie-btn>Click Me!</jie-btn>
+  <jie-btn primary>Click Me!</jie-btn>
+</fieldset>
+<hr>
+<jie-btn xs>Click Me!</jie-btn>
+<jie-btn sm>Click Me!</jie-btn>
+<jie-btn>Click Me!</jie-btn>
+<jie-btn lg>Click Me!</jie-btn>
+<hr>
+<jie-btn primary xs>Click Me!</jie-btn>
+<jie-btn primary sm>Click Me!</jie-btn>
+<jie-btn primary>Click Me!</jie-btn>
+<jie-btn primary lg>Click Me!</jie-btn>
+<hr>
+<jie-btn block xs>Click Me!</jie-btn>
+<jie-btn primary block sm>Click Me!</jie-btn>
+<jie-btn block>Click Me!</jie-btn>
+<jie-btn primary block lg>Click Me!</jie-btn>
+
+</body>
+</html>
