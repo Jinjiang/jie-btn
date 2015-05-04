@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<title>Zorro Btn</title>
+
+<script src="../webcomponentsjs/webcomponents.js"></script>
+<script src="../../web-component-tester/browser.js"></script>
+<link rel="import" href="../z-btn.html">
+
+</head>
+<body>
+
+<z-btn id="normal-btn">Normal Button</z-btn>
+<z-btn id="block-btn" block>Block Button</z-btn>
+
+<script>
+  describe('button display', function () {
+
+    it('should be displayed as an `inline-block` normally', function () {
+        var btn = document.querySelector('#normal-btn');
+        expect(getComputedStyle(btn).display).is.equal('inline-block');
+    });
+
+    it('should be displayed as a `block` when `[block]`', function () {
+        var btn = document.querySelector('#block-btn');
+        expect(getComputedStyle(btn).display).is.equal('block');
+    });
+  });
+</script>
+
+</body>
+</html>
