@@ -1,8 +1,14 @@
 {
-  "name": "jie-btn",
-  "version": "0.0.2",
-  "main": "jie-btn.html",
+  "name": "z-btn",
+  "version": "1.0.0",
+  "main": "z-btn.html",
+  "ignore": [
+    "test"
+  ],
   "dependencies": {
     "polymer": "~0.5.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#~2.2.6"
   }
 }
