@@ -1,8 +1,8 @@
 # `<z-btn>`
 
-按钮
+All kinds of buttons
 
-## 可用的 attributes
+## Attributes
 
 - `active`
 - `disabled`
@@ -10,9 +10,10 @@
 - `xs` | `sm` | `lg`
 - `block`
 
-## examples
 
-### 各种按钮样式
+## Examples
+
+### inline-block buttons
 
 ```
 <p>
@@ -22,6 +23,11 @@
   <z-btn sm>small button</z-btn>
   <z-btn lg primary>large primary button</z-btn>
 </p>
+```
+
+### block buttons
+
+```
 <p><z-btn block>block button</z-btn></p>
 <p><z-btn block primary>primary block button</z-btn></p>
 <p><z-btn block primary lg>lg primary block button</z-btn></p>
