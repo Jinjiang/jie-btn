@@ -1,29 +1,36 @@
 <!--
-  # `<z-btn>`
 
-  按钮
+# `<z-btn>`
 
-  ## 可用的 attributes
+按钮
 
-  * active
-  * disabled
-  * primary
-  * xs | sm | lg
-  * block
+## 可用的 attributes
 
-  ## Example
+- `active`
+- `disabled`
+- `primary`
+- `xs` | `sm` | `lg`
+- `block`
 
-  ```
-  <z-btn>Click Me!</z-btn>
-  <z-btn active>Click Me!</z-btn>
-  <z-btn disabled>Click Me!</z-btn>
-  <z-btn primary>Click Me!</z-btn>
-  <z-btn xs>Click Me!</z-btn>
-  <z-btn sm>Click Me!</z-btn>
-  <z-btn lg>Click Me!</z-btn>
-  <z-btn block>Click Me!</z-btn>
-  <z-btn block primary lg>Click Me!</z-btn>
-  ```
+@element z-btn
+
+-->
+
+<!--
+
+<p>
+  <z-btn>default button</z-btn>
+  <z-btn primary>primary button</z-btn>
+  <z-btn xs>x-small button</z-btn>
+  <z-btn sm>small button</z-btn>
+  <z-btn lg primary>large primary button</z-btn>
+</p>
+<p><z-btn block>block button</z-btn></p>
+<p><z-btn block primary>primary block button</z-btn></p>
+<p><z-btn block primary lg>lg primary block button</z-btn></p>
+
+@example 各种按钮样式
+
 -->
 
 <link rel="import" href="../polymer/polymer.html">
@@ -163,6 +170,10 @@
   </template>
 
   <script>
+    /**
+     * 按钮被加载成功之后，会“刷新”元素的特性，以回避 Chrome 的渲染 bug
+     * @event ready
+     */
     Polymer('z-btn', {
       fixRenderingBug: function (attr) {
         if (this.hasAttribute('block')) {
